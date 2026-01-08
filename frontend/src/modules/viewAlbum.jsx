@@ -1,40 +1,49 @@
 import "./styles/viewAlbum-styles.css"
-import urlCapaAlbum from './capaTeste.jpg'
 import ListGroup from 'react-bootstrap/ListGroup'
 import { useState, useEffect } from "react"
-import getAlbum from "./services/getAlbum"
-
+import getAlbum from '../services/serviceAlbum'
 
 export default function ViewAlbum () {
-    const [album, setAlbum] = useState(null)
-    const [faixas, setFaixas] = useState([])
-
-
+    const [album, setAlbum] = useState({faixas: []});
+    
     useEffect(() => {
-        async function carregarFaixas () {
-            try {
-                const dataGetAlbum = await getAlbum()
+  async function carregarFaixas () {
+    try {
+      const dataGetAlbum = await getAlbum();
+      const capaUrl = dataGetAlbum?.image?.contentUrl || "capaTeste.jpg";
+      const albumFormatado = {
+        capaAlbum: dataGetAlbum?.image?.contentUrl || capaUrl,
+        tituloAlbum: dataGetAlbum.name,
+        artistas: dataGetAlbum.creditedTo,
+        duracaoAlbum: 0, // "PT51M23S"
+        faixas: dataGetAlbum.track.map(track => ({
+            id: track["@id"],
+            numero: track.trackNumber,
+            tituloFaixa: track.name,
+            duracaoFaixa: track.duration // exemplo: "PT03M15S"
+            }))
+        };
+      setAlbum(albumFormatado);
 
-                setAlbum(dataGetAlbum)            
-                setFaixas(dataGetAlbum.faixas)
-        } catch (erro) {
-            console.error("erro ao carregar faixas", erro)
-        } 
-        }
-        carregarFaixas()
-    }, [])
+    } catch (erro) {
+      console.error("erro ao carregar faixas", erro);
+    } 
+  }
+  carregarFaixas();
+}, []);
+
 
 
     return(
         <div>
         {album &&( 
             <div className="Info-Album">
-                <img src={urlCapaAlbum} alt="a" className="CapaAlbum"/>
+                <img src={album.capaAlbum} alt="Capa do álbum" className="CapaAlbum" />
+
                 
-                <p>Nome do Album:{album.nome}</p>
+                <p>Nome do Album:{album.tituloAlbum}</p>
                 <p>Nome do Artista:{album.artistas}</p>
-                <p>Ano de Lançamento:{album.anoLançamento}</p>
-                <p>Duração:{album.duracao}</p>
+                <p>Duração:{album.duracaoAlbum}</p>
             </div>
             
         )}          
@@ -47,17 +56,15 @@ export default function ViewAlbum () {
                   <span>Duração</span>
                 </div>
 
-                {faixas.map((faixa, index) => {
+                {album?.faixas.map((faixas) => {
                     return (
-                    <div className="row" key={faixa.id}>
-                        <span>{index + 1}</span>
+                    <div className="row" key={faixas.id}>
+                        <span>{faixas.numero}</span>
+                        <span>{faixas.tituloFaixa}</span>
+                        <span>{album.artistas}</span>
                         
-                        <div>
-                            <span>{faixa.nome}</span>
-                            <span>{faixa.artistas}</span>
-                        </div>
 
-                        <span className="time">{faixa.duracao}</span>
+                        <span className="time">{faixas.duracaoFaixa}</span>
                     </div>
                     )
                 })}

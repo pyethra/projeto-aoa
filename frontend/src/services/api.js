@@ -1,7 +1,8 @@
 import axios from "axios";
 
-export const api = axios.create({
-  //aqui vai a url oficial achooo???
-  baseURL: "",
+const api = axios.create({
+  baseURL: "/", // usa o proxy configurado no vite
   timeout: 10000,
 });
+
+export default api;
