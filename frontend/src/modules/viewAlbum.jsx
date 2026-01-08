@@ -7,7 +7,7 @@ export default function ViewAlbum () {
     const [album, setAlbum] = useState({faixas: []});
     
     useEffect(() => {
-  async function carregarFaixas () {
+    async function carregarFaixas () {
     try {
       const dataGetAlbum = await getAlbum();
       const capaUrl = dataGetAlbum?.image?.contentUrl || "capaTeste.jpg";
@@ -24,6 +24,7 @@ export default function ViewAlbum () {
             }))
         };
       setAlbum(albumFormatado);
+      console.log(albumFormatado);
 
     } catch (erro) {
       console.error("erro ao carregar faixas", erro);
