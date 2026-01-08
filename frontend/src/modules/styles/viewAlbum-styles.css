@@ -1,0 +1,10 @@
+.CapaAlbum{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.tituloFaixa{
+    font-size: 15px;
+    font-weight: bold
+}
