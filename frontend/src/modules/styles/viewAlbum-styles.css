@@ -1,10 +1,93 @@
-.CapaAlbum{
-    width: 300px;
-    height: 300px;
-    border-radius: 5%;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.tituloFaixa{
-    font-size: 15px;
-    font-weight: bold
+.CapaAlbum {
+  width: 150px;
+  height: 150px;
+  border-radius: 5%;
+}
+
+.Info-Album {
+  display: flex;
+  padding-left: 15px;
+  padding-top: 15px;
+  align-items: center;
+}
+
+.Faixas {
+  margin-top: 5px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  padding: 8px 10px;
+  padding-left: 0px;
+  border-radius: 6px;
+}
+
+.numero {
+  width: 24px;
+  color: #999;
+}
+
+.nome {
+  color: #fff;
+}
+
+.header {
+  font-size: medium;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  padding: 8px 12px;
+  padding-left: 0px;
+  color: #c6c5c5;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.Num {
+  font-size: small;
+}
+
+.FaixaTitulo {
+  display: flex;
+  align-content: flex-start;
+}
+
+.TituloFaixa {
+  font-size: small;
+  align-content: flex-start;
+  display: flex;
+}
+
+.tituloAlbum {
+  font-weight: bolder;
+  font-size: xx-large;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: flex-start;
+  margin: 0px;
+}
+
+.infoDesc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: small;
+  gap:5px;
+}
+
+#pag-Album {
+  background-color: #353535b5;
+  width: 85vw;
+}
+
+.teste {
+  padding-left: 10px;
 }

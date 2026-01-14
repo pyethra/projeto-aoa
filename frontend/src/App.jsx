@@ -1,18 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ViewAlbum from './modules/viewAlbum.jsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./modules/Home.jsx";
+import ViewAlbum from "./modules/viewAlbum.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <ViewAlbum />
-
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/album" element={<ViewAlbum />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

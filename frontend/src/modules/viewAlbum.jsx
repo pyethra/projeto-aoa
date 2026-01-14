@@ -1,11 +1,18 @@
-import "./styles/viewAlbum-styles.css"
-import ListGroup from 'react-bootstrap/ListGroup'
-import { useState, useEffect } from "react"
-import getAlbum from '../services/serviceAlbum'
+import "./styles/viewAlbum-styles.css";
+import ListGroup from "react-bootstrap/ListGroup";
+import { useState, useEffect } from "react";
+//import getAlbum from '../services/serviceAlbum'
+import capaAlbum_vez from "../album_vez/bacocapa.jpg";
+import album_vez from "../album_vez/album_vez.json";
+import { fontSize } from "@mui/system";
+import { useNavigate } from "react-router-dom";
+import { IoChevronBack } from "react-icons/io5";
 
-export default function ViewAlbum () {
-    const [album, setAlbum] = useState({faixas: []});
-    
+export default function ViewAlbum() {
+  const navigate = useNavigate();
+  //const [album, setAlbum] = useState({faixas: []});
+
+  /*
     useEffect(() => {
     async function carregarFaixas () {
     try {
@@ -32,47 +39,47 @@ export default function ViewAlbum () {
   }
   carregarFaixas();
 }, []);
+  */
 
+  const album = album_vez;
 
+  return (
+    <div id="pag-Album">
+      <button onClick={() => navigate(-1)} className="btn-voltar">
+        <IoChevronBack size={24} />
+      </button>
 
-    return(
-        <div>
-        {album &&( 
-            <div className="Info-Album">
-                <img src={album.capaAlbum} alt="Capa do álbum" className="CapaAlbum" />
+      {album && (
+        <div className="Info-Album">
+          <img src={capaAlbum_vez} alt="Capa do álbum" className="CapaAlbum" />
 
-                
-                <p>Nome do Album:{album.tituloAlbum}</p>
-                <p>Nome do Artista:{album.artistas}</p>
-                <p>Duração:{album.duracaoAlbum}</p>
+          <div className="teste">
+            <p className="tituloAlbum">{album.Titulo_album}</p>
+
+            <div className="infoDesc">
+              <p className="nomeArtista">{album.Nome_artista}</p>
+              <p>•</p>
+              <p>Duração: {album.Duracao} min</p>
             </div>
-            
-        )}          
+          </div>
+        </div>
+      )}
 
-            <div className="Faixas">
-
-                <div className="header">
-                  <span>#</span>
-                  <span>Nome</span>
-                  <span>Duração</span>
-                </div>
-
-                {album?.faixas.map((faixas) => {
-                    return (
-                    <div className="row" key={faixas.id}>
-                        <span>{faixas.numero}</span>
-                        <span>{faixas.tituloFaixa}</span>
-                        <span>{album.artistas}</span>
-                        
-
-                        <span className="time">{faixas.duracaoFaixa}</span>
-                    </div>
-                    )
-                })}
-
-            </div>
+      <div className="Faixas">
+        <div className="header">
+          <span className="num">#</span>
+          <span className="FaixaTitulo">Nome</span>
         </div>
 
-            
-    )
+        {album.Faixas.map((Faixas, index) => {
+          return (
+            <div className="row" key={index}>
+              <span className="Num">{index + 1}</span>
+              <span className="TituloFaixa">{Faixas}</span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
