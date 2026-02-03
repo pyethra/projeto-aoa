@@ -3,7 +3,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import { useState, useEffect } from "react";
 //import getAlbum from '../services/serviceAlbum'
 import capaAlbum_vez from "../album_vez/bacocapa.jpg";
-import album_vez from "../album_vez/album_vez.json";
+import album_vez from "../../album_vez/album_vez.json";
 import { fontSize } from "@mui/system";
 import { useNavigate } from "react-router-dom";
 import { IoChevronBack } from "react-icons/io5";
