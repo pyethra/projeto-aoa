@@ -7,12 +7,12 @@ body,
   height: 100%;
 }
 
-#homePag {
-  min-height: 100vh;
+#Album-da-vez {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #00ffff;
+  margin: 50px;
 }
 
 .teste_ {
@@ -71,4 +71,6 @@ body,
   background-color: red;
   display: flex;
   flex-direction: column;
+  padding: 30px;
+  margin: 50px;
 }

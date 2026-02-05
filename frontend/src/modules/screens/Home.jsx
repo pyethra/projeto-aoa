@@ -1,6 +1,6 @@
-import "./styles/Home-styles.css";
+import "../styles/Home-styles.css";
 import { useNavigate } from "react-router-dom";
-import capaAlbum_vez from "../album_vez/bacocapa.jpg";
+import capaAlbum_vez from "../../album_vez/bacocapa.jpg";
 import album_vez from "../../album_vez/album_vez.json";
 import { IoChevronBack } from "react-icons/io5";
 import CarrouselAlbums from "../components/CarrouselAlbums";
@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div id="homePag">
-      <div>
+      <div id="Album-da-vez">
         {album && (
           <div
             className="album-card"
