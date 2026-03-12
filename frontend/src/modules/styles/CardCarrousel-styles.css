@@ -1,0 +1,13 @@
+html,
+body,
+#root{
+  margin: 0;
+  padding: 0;
+}
+
+
+#imgCapaAlbum{
+    width: "100%";
+    border-top-left-radius: "5px";
+    border-top-right-radius: "5px";
+}

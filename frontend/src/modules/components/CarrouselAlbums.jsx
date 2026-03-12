@@ -1,41 +1,55 @@
-import { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
-import ExampleCarouselImage from "../../album_vez/album_vez.json";
+import "../styles/CarrouselAlbums-styles.css";
+import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
+import { useEffect, useState } from "react";
 
-function ControlledCarousel() {
-  const [index, setIndex] = useState(0);
+export default function CarrouselAlbums({
+  children: slides,
+  autoSlide = false,
+  autoSlideInterval = 3000,
+}) {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
+  const previousSlide = () =>
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+
+  const nextSlide = () =>
+    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+
+  useEffect(() => {
+    if (!autoSlide) return;
+    const slideInterval = setInterval(nextSlide, autoSlideInterval);
+    return () => clearInterval(slideInterval);
+  }, [autoSlide, autoSlideInterval]);
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-        <ExampleCarouselImage text="First slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <ExampleCarouselImage text="Second slide" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <ExampleCarouselImage text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <div className="carousel">
+      <div
+        className="carousel-track"
+        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+      >
+        {slides}
+      </div>
+
+      <div className="carousel-controls">
+        <button onClick={previousSlide} className="carousel-button">
+          <BiChevronLeft size={40} />
+        </button>
+
+        <button onClick={nextSlide} className="carousel-button">
+          <BiChevronRight size={40} />
+        </button>
+      </div>
+
+      <div className="carousel-indicators">
+        <div className="indicator-container">
+          {slides.map((_, i) => (
+            <div
+              key={i}
+              className={`indicator ${currentSlide === i ? "active" : ""}`}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
-
-export default ControlledCarousel;

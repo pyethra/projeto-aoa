@@ -1,0 +1,31 @@
+#root, body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: Roboto;
+}
+
+p{
+  margin: 0;
+}
+
+#AlbumAtual {
+  display: flex;
+  background-color: #242424 ;
+  width: 100vh;
+  padding: 5px;
+}
+
+.album-cover {
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+  display: block;
+  margin: 10px;
+  margin-right: 20px;
+}
+
+.Infos-Album{
+  display: flex;
+  gap: 5px;
+}
