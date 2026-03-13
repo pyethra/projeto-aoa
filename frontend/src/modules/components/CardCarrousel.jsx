@@ -5,20 +5,13 @@ import { FaStar } from "react-icons/fa";
 import { FaUserGroup } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 
-export default function CardCarrousel() {
-  const { AlbumCapa, setAlbumCapa } = useState();
-  const { AlbumTitulo, setAlbumTitulo } = useState();
-  const { AlbumArtistas, setAlbumArtistas } = useState();
-  const { AlbumMediaAvaliacao, setAlbumMediaAvaliacao } = useState();
-  const { AlbumQuantAvaliacao, setAlbumQuantAvaliacao } = useState();
-
-  /*useEffect(() => {
-    if (!autoSlide) return;
-    const slideInterval = setInterval(nextSlide, autoSlideInterval);
-    return () => clearInterval(slideInterval);
-  }, [autoSlide, autoSlideInterval]);
-*/
-
+export default function CardCarrousel({
+  AlbumCapa,
+  AlbumTitulo,
+  AlbumArtistas,
+  AlbumMediaAvaliacao,
+  AlbumQuantAvaliacao,
+}) {
   return (
     <div
       style={{
@@ -46,76 +39,21 @@ export default function CardCarrousel() {
           src="./src/album_vez/bacocapa.jpg"
           //{AlbumCapa}
         />
-        <Card.Body style={{ marginLeft: "10px" }}>
-          <Card.Title style={{ fontSize: "19px", fontWeight: "600" }}>
-            {AlbumTitulo}
-          </Card.Title>
-          <Card.Title style={{ fontSize: "14px", color: "darkgrey" }}>
-            {AlbumArtistas}
-          </Card.Title>
-          <Card.Text
-            style={{
-              fontSize: "14px",
-              paddingTop: "3px",
-              paddingBottom: "10px",
-              display: "flex",
-              gap: 10,
-              margin: 0,
-            }}
-          >
-            <div style={{ display: "flex", gap: 10 }}>
-              <div
-                style={{
-                  display: "flex",
-                  gap: 5,
-                  alignItems: "center",
-                }}
-              >
-                <FaStar
-                  size={15}
-                  style={{
-                    margin: 0,
-                    padding: 0,
-                  }}
-                ></FaStar>
-                <p
-                  style={{
-                    margin: 0,
-                    padding: 0,
-                  }}
-                >
-                  {AlbumMediaAvaliacao}
-                </p>
+        <Card.Body className="CardBody">
+          <Card.Title className="AlbumTitulo">{AlbumTitulo}</Card.Title>
+          <Card.Title className="AlbumArtistas">{AlbumArtistas}</Card.Title>
+          <div className="CardText">
+            <div className="AlbumRatings">
+              <div className="AlbumMediaRatings">
+                <FaStar className="Icon"></FaStar>
+                <span className="TextRating">10{AlbumMediaAvaliacao}</span>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  gap: 5,
-                  justifyContent: "center",
-                  alignContent: "center",
-                  margin: 0,
-                  alignItems: "center",
-                }}
-              >
-                <FaUserGroup
-                  size={15}
-                  style={{
-                    margin: 0,
-                    padding: 0,
-                    size: 8,
-                  }}
-                ></FaUserGroup>
-                <p
-                  style={{
-                    margin: 0,
-                    padding: 0,
-                  }}
-                >
-                  {AlbumQuantAvaliacao}
-                </p>
+              <div className="AlbumRatingCount">
+                <FaUserGroup className="Icon"></FaUserGroup>
+                <span className="TextRating">10{AlbumQuantAvaliacao}</span>
               </div>
             </div>
-          </Card.Text>
+          </div>
         </Card.Body>
       </Card>
     </div>

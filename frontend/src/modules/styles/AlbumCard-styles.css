@@ -9,6 +9,63 @@ p{
   margin: 0;
 }
 
+.AlbumTitulo{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.AlbumArtistas{
+  font-size: 14px;
+  color: darkgrey;
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
+
+.CardBody{
+  margin-Left: "10px" 
+}
+.CardText{
+  font-Size: "14px";
+  padding-Top: "3px";
+  padding-Bottom: "10px";
+  display: "flex";
+  gap: 10px;
+  margin: 0
+}
+
+.AlbumRatings{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-bottom: 5px;
+}
+
+.AlbumMediaRatings{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.AlbumRatingCount{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  align-items: center;
+}
+
+.Icon{
+  margin: 0;
+  padding: 0;
+  font-size: 15;
+}
+
+.TextRating{
+padding:0;
+margin: 0;
+}
+
 #AlbumAtual {
   display: flex;
   background-color: #242424 ;

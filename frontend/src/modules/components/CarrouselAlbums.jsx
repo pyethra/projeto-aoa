@@ -3,11 +3,14 @@ import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { useEffect, useState } from "react";
 
 export default function CarrouselAlbums({
-  children: slides,
+  children,
   autoSlide = false,
   autoSlideInterval = 3000,
 }) {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  // garante que children seja sempre array
+  const slides = Array.isArray(children) ? children : [children];
 
   const previousSlide = () =>
     setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
@@ -17,17 +20,24 @@ export default function CarrouselAlbums({
 
   useEffect(() => {
     if (!autoSlide) return;
+
     const slideInterval = setInterval(nextSlide, autoSlideInterval);
     return () => clearInterval(slideInterval);
-  }, [autoSlide, autoSlideInterval]);
+  }, [autoSlide, autoSlideInterval, slides.length]);
 
   return (
     <div className="carousel">
       <div
         className="carousel-track"
-        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        style={{
+          transform: `translateX(-${currentSlide * 100}%)`,
+        }}
       >
-        {slides}
+        {slides.map((slide, index) => (
+          <div className="carousel-slide" key={index}>
+            {slide}
+          </div>
+        ))}
       </div>
 
       <div className="carousel-controls">
@@ -41,14 +51,13 @@ export default function CarrouselAlbums({
       </div>
 
       <div className="carousel-indicators">
-        <div className="indicator-container">
-          {slides.map((_, i) => (
-            <div
-              key={i}
-              className={`indicator ${currentSlide === i ? "active" : ""}`}
-            />
-          ))}
-        </div>
+        {slides.map((_, i) => (
+          <div
+            key={i}
+            className={`indicator ${currentSlide === i ? "active" : ""}`}
+            onClick={() => setCurrentSlide(i)}
+          />
+        ))}
       </div>
     </div>
   );

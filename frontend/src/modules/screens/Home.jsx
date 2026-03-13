@@ -1,28 +1,47 @@
-<style>
-  @import
-  url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-</style>;
-
+import { useEffect, useState } from "react";
 import CardCarrousel from "../components/CardCarrousel.jsx";
 import "../styles/Home-styles.css";
-import { useNavigate } from "react-router-dom";
 import CarrouselAlbums from "../components/CarrouselAlbums";
 import AlbumCard from "../components/AlbumCard";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import BotaoFiltro from "../../modules/components/BotaoFiltro.jsx";
 
 export default function Home() {
-  const slides = ["../../album_vez/bacocapa.jpg"];
+  const [albumAvaliadosBD, setalbumAvaliadosBD] = useState([]);
+
+  useEffect(() => {
+    fetch("https://localhost:7213/api/AlbumsAvaliados")
+      .then((respAPI) => respAPI.json())
+      .then((data) => {
+        setalbumAvaliadosBD(data);
+      })
+      .catch((error) => {
+        console.error(
+          "Erro ao carregar albuns avaliados anteriormente:",
+          error,
+        );
+      });
+  }, []);
 
   return (
     <div id="homePag">
       <AlbumCard></AlbumCard>
 
-      <div style={{ display: "flex" }}>
-        <CardCarrousel></CardCarrousel>
-        <CardCarrousel></CardCarrousel>
-        <CardCarrousel></CardCarrousel>
-      </div>
+      <BotaoFiltro></BotaoFiltro>
+
+      <CarrouselAlbums>
+        {albumAvaliadosBD.map((album) => (
+          <CardCarrousel
+            key={album.id}
+            AlbumCapa={album.AlbumCapa}
+            AlbumTitulo={album.albumTitulo}
+            AlbumArtistas={album.albumArtistas}
+            AlbumMediaAvaliacao={album.AlbumMediaAvaliacao}
+            AlbumQuantAvaliacao={album.AlbumQuantAvaliacao}
+          ></CardCarrousel>
+        ))}
+      </CarrouselAlbums>
     </div>
   );
 }
