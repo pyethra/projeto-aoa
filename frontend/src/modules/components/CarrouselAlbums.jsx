@@ -6,24 +6,33 @@ export default function CarrouselAlbums({
   children,
   autoSlide = false,
   autoSlideInterval = 3000,
+  slidesPerView = 2,
 }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // garante que children seja sempre array
+  // garante array
   const slides = Array.isArray(children) ? children : [children];
 
+  // cria páginas de slides
+  const pages = [];
+  for (let i = 0; i < slides.length; i += slidesPerView) {
+    pages.push(slides.slice(i, i + slidesPerView));
+  }
+
+  const totalPages = pages.length;
+
   const previousSlide = () =>
-    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+    setCurrentSlide((prev) => (prev === 0 ? totalPages - 1 : prev - 1));
 
   const nextSlide = () =>
-    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    setCurrentSlide((prev) => (prev === totalPages - 1 ? 0 : prev + 1));
 
   useEffect(() => {
     if (!autoSlide) return;
 
     const slideInterval = setInterval(nextSlide, autoSlideInterval);
     return () => clearInterval(slideInterval);
-  }, [autoSlide, autoSlideInterval, slides.length]);
+  }, [autoSlide, autoSlideInterval, totalPages]);
 
   return (
     <div className="carousel">
@@ -33,9 +42,9 @@ export default function CarrouselAlbums({
           transform: `translateX(-${currentSlide * 100}%)`,
         }}
       >
-        {slides.map((slide, index) => (
+        {pages.map((page, index) => (
           <div className="carousel-slide" key={index}>
-            {slide}
+            <div className="carousel-page">{page}</div>
           </div>
         ))}
       </div>
@@ -51,7 +60,7 @@ export default function CarrouselAlbums({
       </div>
 
       <div className="carousel-indicators">
-        {slides.map((_, i) => (
+        {pages.map((_, i) => (
           <div
             key={i}
             className={`indicator ${currentSlide === i ? "active" : ""}`}

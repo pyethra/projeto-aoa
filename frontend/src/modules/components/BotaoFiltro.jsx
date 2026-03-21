@@ -1,12 +1,30 @@
 import "../styles/BotaoFiltro-styles.css";
-import Cover from "../../album_vez/bacocapa.jpg";
-import capaAlbumvez from "../../album_vez/bacocapa.jpg";
-import album from "../../album_vez/album_vez.json";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 
-export default function BotaoFiltro() {
+export default function BotaoFiltro({
+  tituloPadrao,
+  valorSelecionado,
+  opcoes,
+  onSelecionar,
+  renderLabel,
+}) {
   return (
-    <div
-      style={{ backgroundColor: "aqua", width: "100px", height: "50px" }}
-    ></div>
+    <div>
+      <DropdownButton
+        id="dropdown-basic-button"
+        title={valorSelecionado ? renderLabel(valorSelecionado) : tituloPadrao}
+      >
+        {opcoes.map((opcao) => (
+          <Dropdown.Item
+            key={opcao}
+            onClick={() => onSelecionar(opcao)}
+            className="dropdown-menu"
+          >
+            {renderLabel(opcao)}
+          </Dropdown.Item>
+        ))}
+      </DropdownButton>
+    </div>
   );
 }
