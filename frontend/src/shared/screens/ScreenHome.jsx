@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-import CardCarrousel from "../components/CardCarrousel.jsx";
 import "../styles/Home-styles.css";
-import CarrouselAlbums from "../components/CarrouselAlbums";
-import AlbumCard from "../components/AlbumCard";
-import { getAlbumAvaliados } from "../services/api.js";
+import AlbumCard from "../components/AlbumCard.jsx";
 import BotaoFiltro from "../components/BotaoFiltro.jsx";
+import ListaAlbums from "../components/ListaAlbums.jsx";
 
-export default function Home() {
+export default function ScreenHome() {
   const [AlbumAvaliadosBD, setAlbumAvaliadosBD] = useState([]);
   const [Temporadas, setTemporadas] = useState([]);
   const [temporadaSelecionada, setTemporadaSelecionada] = useState();
@@ -59,7 +57,7 @@ export default function Home() {
 
         <div>
           <BotaoFiltro
-            tituloPadrao="Albuns avaliados"
+            tituloPadrao="Selecionar avaliados"
             valorSelecionado={filtroAvaliacao}
             opcoes={statusAvaliacao}
             onSelecionar={setFiltroAvaliacao}
@@ -68,29 +66,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div
-        style={{
-          maxWidth: "1200px",
-          width: "100%",
-          height: "500px",
-          margin: "0 auto",
-        }}
-      >
-        <CarrouselAlbums>
-          {FiltroAlbumsCarrousel.map((album) => (
-            <CardCarrousel
-              key={album.id_album_avaliado}
-              AlbumCapa={album.AlbumCapa}
-              AlbumTitulo={album.albumTitulo}
-              AlbumArtistas={album.albumArtistas}
-              AlbumTemporada={album.temporada}
-              AlbumAvaliado={album.avaliado}
-              AlbumMediaAvaliacao={album.AlbumMediaAvaliacao}
-              AlbumQuantAvaliacao={album.AlbumQuantAvaliacao}
-            ></CardCarrousel>
-          ))}
-        </CarrouselAlbums>
-      </div>
+      <ListaAlbums></ListaAlbums>
     </div>
   );
 }

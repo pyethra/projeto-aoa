@@ -68,7 +68,7 @@ margin: 0;
 
 #AlbumAtual {
   display: flex;
-  background-color: #242424 ;
+  
   width: 100vh;
   padding: 5px;
 }

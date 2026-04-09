@@ -1,0 +1,905 @@
+[
+  {
+    "id_album": 1,
+    "id_albumSpotify": "1JqY02pklBKhzoBADtmFlA",
+    "AlbumTitulo": "The Fame Monster",
+    "temporada": 1,
+    "id_user_indicado_por": 8,
+    "AlbumArtistas": "Lady Gaga",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 2,
+    "id_albumSpotify": "3Vsbl0diFGw8HNSjG8ue9m",
+    "AlbumTitulo": "Romance",
+    "temporada": 1,
+    "id_user_indicado_por": 1,
+    "AlbumArtistas": "Camila Cabello",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 3,
+    "id_albumSpotify": "6DEjYFkNZh67HP7R9PSZvv",
+    "AlbumTitulo": "Reputation",
+    "temporada": 1,
+    "id_user_indicado_por": 12,
+    "AlbumArtistas": "Taylor Swift",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 4,
+    "id_albumSpotify": "6ApYSpXF8GxZAgBTHDzYge",
+    "AlbumTitulo": "Pray For The Wicked",
+    "temporada": 1,
+    "id_user_indicado_por": 7,
+    "AlbumArtistas": "Panic! At The Disco",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 5,
+    "id_albumSpotify": "4DhwPZXdLy4LjoHqJxz8DM",
+    "AlbumTitulo": "Cry Baby",
+    "temporada": 1,
+    "id_user_indicado_por": 8,
+    "AlbumArtistas": "Melanie Martinez",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 6,
+    "id_albumSpotify": "5LuBFgpIu2aWKhfnfw2SHV",
+    "AlbumTitulo": "Oh Death",
+    "temporada": 2,
+    "id_user_indicado_por": 13,
+    "AlbumArtistas": "Sugr?",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 7,
+    "id_albumSpotify": "7wOOA7l306K8HfBKfPoafr",
+    "AlbumTitulo": "In Utero",
+    "temporada": 2,
+    "id_user_indicado_por": 4,
+    "AlbumArtistas": "Nirvana",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 8,
+    "id_albumSpotify": "43Q8jiKg8whuFnVCwA1xOC",
+    "AlbumTitulo": "Cor",
+    "temporada": 2,
+    "id_user_indicado_por": 7,
+    "AlbumArtistas": "Anavitória",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 9,
+    "id_albumSpotify": "5KbvYEF5b17V0ofM46iOVY",
+    "AlbumTitulo": "The Bitter Truth",
+    "temporada": 2,
+    "id_user_indicado_por": 9,
+    "AlbumArtistas": "Evanescence",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 11,
+    "id_albumSpotify": "6nxDQi0FeEwccEPJeNySoS",
+    "AlbumTitulo": "Night Visions",
+    "temporada": 2,
+    "id_user_indicado_por": 11,
+    "AlbumArtistas": "Imagine Dragons",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 12,
+    "id_albumSpotify": "1ER3B6zev5JEAaqhnyyfbf",
+    "AlbumTitulo": "Hunting High and Low",
+    "temporada": 2,
+    "id_user_indicado_por": 12,
+    "AlbumArtistas": "A-ha",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 13,
+    "id_albumSpotify": "5Bt5FYi2uicM6ryvNqKUzI",
+    "AlbumTitulo": "Mamonas Assassinas",
+    "temporada": 2,
+    "id_user_indicado_por": 8,
+    "AlbumArtistas": "Mamonas Assassinas",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 14,
+    "id_albumSpotify": "0c1yNi1MuGlcNrCzU2kDVE",
+    "AlbumTitulo": "Cage the Elephant",
+    "temporada": 3,
+    "id_user_indicado_por": 7,
+    "AlbumArtistas": "Cage the Elephant",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 15,
+    "id_albumSpotify": "18IXUhJqikhJ0Th7TvmGQ8",
+    "AlbumTitulo": "Jagged Little Pill",
+    "temporada": 3,
+    "id_user_indicado_por": 10,
+    "AlbumArtistas": "Alanis Morissette",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 16,
+    "id_albumSpotify": "7aIgGWlHdcPXOfONtXVliK",
+    "AlbumTitulo": "Lovedrive",
+    "temporada": 3,
+    "id_user_indicado_por": 12,
+    "AlbumArtistas": "Scorpions",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 17,
+    "id_albumSpotify": "1WfIjwnJ0aHiWCSkeSSeuV",
+    "AlbumTitulo": "Euphories",
+    "temporada": 3,
+    "id_user_indicado_por": 8,
+    "AlbumArtistas": "Videoclub",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 19,
+    "id_albumSpotify": "2NSlJrtlqkv1lfUvoEZ0EL",
+    "AlbumTitulo": "Holy Land",
+    "temporada": 3,
+    "id_user_indicado_por": 9,
+    "AlbumArtistas": "Angra",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 20,
+    "id_albumSpotify": "71HeCCNmwSJpAQy0eZYwV0",
+    "AlbumTitulo": "Ouro",
+    "temporada": 3,
+    "id_user_indicado_por": 1,
+    "AlbumArtistas": "Vitão",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 21,
+    "id_albumSpotify": "1GXMNFfoHF4sN7lG8gZq1j",
+    "AlbumTitulo": "Modern Vampires of the City",
+    "temporada": 3,
+    "id_user_indicado_por": 3,
+    "AlbumArtistas": "Vampire Weekend",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 22,
+    "id_albumSpotify": "00vb6sViDbJLmLLchfbRh4",
+    "AlbumTitulo": "Taste of Love",
+    "temporada": 3,
+    "id_user_indicado_por": 6,
+    "AlbumArtistas": "Twice",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 23,
+    "id_albumSpotify": "4hrZp6mKgz0HG7UpRbNYQx",
+    "AlbumTitulo": "Machina / The Machines of God",
+    "temporada": 3,
+    "id_user_indicado_por": 14,
+    "AlbumArtistas": "The Smashing Pumpkins",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 25,
+    "id_albumSpotify": "2B87zXm9bOWvAJdkJBTpzF",
+    "AlbumTitulo": "Melodrama",
+    "temporada": 3,
+    "id_user_indicado_por": 8,
+    "AlbumArtistas": "Lorde",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 26,
+    "id_albumSpotify": "67a6pDoMKQYOKGMnmUQZbq",
+    "AlbumTitulo": "Lobos",
+    "temporada": 3,
+    "id_user_indicado_por": 15,
+    "AlbumArtistas": "Jão",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 28,
+    "id_albumSpotify": "6WvN5lJoLYNXc8HYLuxjeX",
+    "AlbumTitulo": "Exagerado",
+    "temporada": 4,
+    "id_user_indicado_por": 12,
+    "AlbumArtistas": "Cazuza",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 30,
+    "id_albumSpotify": "3UoOO8m0oxxvUHXUKf3qcZ",
+    "AlbumTitulo": "Riot!",
+    "temporada": 4,
+    "id_user_indicado_por": 4,
+    "AlbumArtistas": "Paramore",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 31,
+    "id_albumSpotify": "0lw68yx3MhKflWFqCsGkIs",
+    "AlbumTitulo": "Black Holes and Revelations",
+    "temporada": 4,
+    "id_user_indicado_por": 5,
+    "AlbumArtistas": "Muse",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 32,
+    "id_albumSpotify": "0aeyuuUCnnWv0M1KIIeStU",
+    "AlbumTitulo": "Confraria da Costa",
+    "temporada": 4,
+    "id_user_indicado_por": 14,
+    "AlbumArtistas": "Confraria da Costa",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 33,
+    "id_albumSpotify": "0n1ezF06m7v5MpHrk77mBv",
+    "AlbumTitulo": "Pacifisticuffs",
+    "temporada": 4,
+    "id_user_indicado_por": 9,
+    "AlbumArtistas": "Diablo Swing Orchestra",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 34,
+    "id_albumSpotify": "1XkGORuUX2QGOEIL4EbJKm",
+    "AlbumTitulo": "Favourite Worst Nightmare",
+    "temporada": 4,
+    "id_user_indicado_por": 3,
+    "AlbumArtistas": "Arctic Monkeys",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 35,
+    "id_albumSpotify": "33pt9HBdGlAbRGBHQgsZsU",
+    "AlbumTitulo": "Evolve",
+    "temporada": 4,
+    "id_user_indicado_por": 11,
+    "AlbumArtistas": "Imagine Dragons",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 36,
+    "id_albumSpotify": "2AluSp6sapRu17yc4r2a5F",
+    "AlbumTitulo": "Sing to me instead",
+    "temporada": 4,
+    "id_user_indicado_por": 10,
+    "AlbumArtistas": "Ben Platt",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 37,
+    "id_albumSpotify": "2jVxhH1xg6EIc87rGM1Ogt",
+    "AlbumTitulo": "Thank You Happy Birthday",
+    "temporada": 4,
+    "id_user_indicado_por": 7,
+    "AlbumArtistas": "Cage The Elephant",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 38,
+    "id_albumSpotify": "3OdT6CibeTpWD54g0MniBg",
+    "AlbumTitulo": "Alegoria",
+    "temporada": 4,
+    "id_user_indicado_por": 1,
+    "AlbumArtistas": "Gloria Groove",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 39,
+    "id_albumSpotify": "1A3nVEWRJ8yvlPzawHI1pQ",
+    "AlbumTitulo": "Father of the Bride",
+    "temporada": 5,
+    "id_user_indicado_por": 3,
+    "AlbumArtistas": "Vampire Weekend",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 40,
+    "id_albumSpotify": "3eBrvZnagmIDbdgse7cjI6",
+    "AlbumTitulo": "2112",
+    "temporada": 5,
+    "id_user_indicado_por": 4,
+    "AlbumArtistas": "Rush",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 41,
+    "id_albumSpotify": "4a5pNRjwmzYQuEY1E7O6pj",
+    "AlbumTitulo": "Breakfast in America - Remastered 2010",
+    "temporada": 5,
+    "id_user_indicado_por": 5,
+    "AlbumArtistas": "Supertramp",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 42,
+    "id_albumSpotify": "0fUhYS7qlPkM3seTUzGCoV",
+    "AlbumTitulo": "Kiokiranbu",
+    "temporada": 5,
+    "id_user_indicado_por": 6,
+    "AlbumArtistas": "GARNiDELiA",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 44,
+    "id_albumSpotify": "5nJ9B1KiydXoYWAcyqlG76",
+    "AlbumTitulo": "Melophobia",
+    "temporada": 5,
+    "id_user_indicado_por": 7,
+    "AlbumArtistas": "Cage the Elephant",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 45,
+    "id_albumSpotify": "0UCnlYGAVi4XfLK7fJcVI1",
+    "AlbumTitulo": "Fenrir's Scar",
+    "temporada": 5,
+    "id_user_indicado_por": 9,
+    "AlbumArtistas": "Fenrir's Scar",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 46,
+    "id_albumSpotify": "41U6Qbx5KxhHYIuwlK3lXA",
+    "AlbumTitulo": "O My Heart",
+    "temporada": 5,
+    "id_user_indicado_por": 8,
+    "AlbumArtistas": "Mother Mother",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 47,
+    "id_albumSpotify": "3JODIzr9NLL7CMojdUR70g",
+    "AlbumTitulo": "Ceremonials",
+    "temporada": 5,
+    "id_user_indicado_por": 10,
+    "AlbumArtistas": "Florence + The Machine",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 49,
+    "id_albumSpotify": "2ANVost0y2y52ema1E9xAZ",
+    "AlbumTitulo": "Thriller",
+    "temporada": 5,
+    "id_user_indicado_por": 12,
+    "AlbumArtistas": "Michael Jackson",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 50,
+    "id_albumSpotify": "0OwRv1sMp4k7SdkcyRI6Nz",
+    "AlbumTitulo": "Casa Moxei",
+    "temporada": 5,
+    "id_user_indicado_por": 14,
+    "AlbumArtistas": "Sala Especial",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 52,
+    "id_albumSpotify": "4eKdn0skJCidO2wqIJyCgB",
+    "AlbumTitulo": "Lion Heart - The 5th Album",
+    "temporada": 6,
+    "id_user_indicado_por": 12,
+    "AlbumArtistas": "Girls’ Generation",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 53,
+    "id_albumSpotify": "6yiXkzHvC0OTmhfDQOEWtS",
+    "AlbumTitulo": "Mercury – Act 1",
+    "temporada": 6,
+    "id_user_indicado_por": 8,
+    "AlbumArtistas": "Imagine Dragons",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 54,
+    "id_albumSpotify": "3ZAWIIIWwe5ZmfY4fLZ8Y0",
+    "AlbumTitulo": "Swagger and Stroll Down the Rabbit Hole",
+    "temporada": 6,
+    "id_user_indicado_por": 9,
+    "AlbumArtistas": "Diablo Swing Orchestra",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 55,
+    "id_albumSpotify": "0fMeJorzylKnfeVf7p5DEK",
+    "AlbumTitulo": "Snapshot",
+    "temporada": 6,
+    "id_user_indicado_por": 5,
+    "AlbumArtistas": "The Strypes",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 56,
+    "id_albumSpotify": "54LDL9Za9fAmFdibCwu9ha",
+    "AlbumTitulo": "Sinto Muito",
+    "temporada": 6,
+    "id_user_indicado_por": 7,
+    "AlbumArtistas": "Duda Beat",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 57,
+    "id_albumSpotify": "0FaC1N7xoN4Bloe1R1U42k",
+    "AlbumTitulo": "Coisas da Geração",
+    "temporada": 6,
+    "id_user_indicado_por": 1,
+    "AlbumArtistas": "Lagum",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 58,
+    "id_albumSpotify": "1To7kv722A8SpZF789MZy7",
+    "AlbumTitulo": "MTV Unplugged in New York",
+    "temporada": 6,
+    "id_user_indicado_por": 4,
+    "AlbumArtistas": "Nirvana",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 59,
+    "id_albumSpotify": "2fenSS68JI1h4Fo296JfGr",
+    "AlbumTitulo": "Folklore",
+    "temporada": 7,
+    "id_user_indicado_por": 1,
+    "AlbumArtistas": "Taylor Swift",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 61,
+    "id_albumSpotify": "2Xoteh7uEpea4TohMxjtaq",
+    "AlbumTitulo": "Evermore",
+    "temporada": 7,
+    "id_user_indicado_por": 12,
+    "AlbumArtistas": "Taylor Swift",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 62,
+    "id_albumSpotify": "1ABqpcr1EGI2AyIXNIjMMA",
+    "AlbumTitulo": "Iskuros",
+    "temporada": 7,
+    "id_user_indicado_por": 9,
+    "AlbumArtistas": "Plastique Noir",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 63,
+    "id_albumSpotify": "1jorKBzr3vs08LDggKCAyr",
+    "AlbumTitulo": "Infections of a Different Kind - Step 1",
+    "temporada": 7,
+    "id_user_indicado_por": 8,
+    "AlbumArtistas": "Aurora",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 64,
+    "id_albumSpotify": "2mD97VgxTRfwB8F5tvkwrL",
+    "AlbumTitulo": "Beneath the Skin",
+    "temporada": 7,
+    "id_user_indicado_por": 7,
+    "AlbumArtistas": "Of Monsters and Men",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 65,
+    "id_albumSpotify": "2scB1uhcCI1TSf6b9TCZK3",
+    "AlbumTitulo": "FutureSex/LoveSounds",
+    "temporada": 7,
+    "id_user_indicado_por": 5,
+    "AlbumArtistas": "Justin Timberlake",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 67,
+    "id_albumSpotify": "6j8k5gIeWzXapGKTVaZzER",
+    "AlbumTitulo": "High School Musical 3: Senior Year",
+    "temporada": 7,
+    "id_user_indicado_por": 6,
+    "AlbumArtistas": "Elenco de High School Musical",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 68,
+    "id_albumSpotify": "2fYhqwDWXjbpjaIJPEfKFw",
+    "AlbumTitulo": null,
+    "temporada": null,
+    "id_user_indicado_por": 8,
+    "AlbumArtistas": 8,
+    "data_inicio_avaliacao": "Ariana Grande",
+    "data_fim_avaliacao": null,
+    "avaliado": null
+  },
+  {
+    "id_album": 69,
+    "id_albumSpotify": "1FqPZscG7gDH6utCpoWnkG",
+    "AlbumTitulo": "Aphelion",
+    "temporada": 8,
+    "id_user_indicado_por": 9,
+    "AlbumArtistas": "Leprous",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 71,
+    "id_albumSpotify": "034ir9swD9gSpQNsfu9Ri4",
+    "AlbumTitulo": "Adoniran Barbosa",
+    "temporada": 8,
+    "id_user_indicado_por": 5,
+    "AlbumArtistas": "Adoniran Barbosa",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 72,
+    "id_albumSpotify": "5052Ip89wdW8EGdpjEpNeq",
+    "AlbumTitulo": "Formula of Love: O+T=<3",
+    "temporada": 8,
+    "id_user_indicado_por": 6,
+    "AlbumArtistas": "TWICE",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 73,
+    "id_albumSpotify": "1hg0pQJLE9dzfT1kgZtDPr",
+    "AlbumTitulo": "Confessions on a Dance Floor",
+    "temporada": 8,
+    "id_user_indicado_por": 12,
+    "AlbumArtistas": "Madonna",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 74,
+    "id_albumSpotify": "6ZvDJs17O3woQirttKRYCG",
+    "AlbumTitulo": "Sick Boy",
+    "temporada": 8,
+    "id_user_indicado_por": 7,
+    "AlbumArtistas": "The Chainsmokers",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 75,
+    "id_albumSpotify": "2zcMgU6PAlLUDQMqZcxxUU",
+    "AlbumTitulo": "Contra",
+    "temporada": 8,
+    "id_user_indicado_por": 3,
+    "AlbumArtistas": "Vampire Weekend",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 76,
+    "id_albumSpotify": "4eLPsYPBmXABThSJ821sqY",
+    "AlbumTitulo": "DAMN.",
+    "temporada": 9,
+    "id_user_indicado_por": 4,
+    "AlbumArtistas": "Kendrick Lamar",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 77,
+    "id_albumSpotify": "5ef3YHfeGQd6JW056VmKiy",
+    "AlbumTitulo": "Acústico Ao Vivo",
+    "temporada": 9,
+    "id_user_indicado_por": 12,
+    "AlbumArtistas": "Bruno & Marrone",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 79,
+    "id_albumSpotify": "4XOVZpiAPSQmq2R8PPyJSL",
+    "AlbumTitulo": "MADE IN HEAVEN",
+    "temporada": 9,
+    "id_user_indicado_por": 7,
+    "AlbumArtistas": "Julia Cooper",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 80,
+    "id_albumSpotify": "3QWc9HhBWgk9dIEwOkJx4q",
+    "AlbumTitulo": "Memento Mori",
+    "temporada": 9,
+    "id_user_indicado_por": 9,
+    "AlbumArtistas": "Depeche Mode",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 1
+  },
+  {
+    "id_album": 81,
+    "id_albumSpotify": "1aqg30bNvLSWgShZgX4oop",
+    "AlbumTitulo": "Man's Best Friend",
+    "temporada": 10,
+    "id_user_indicado_por": 1,
+    "AlbumArtistas": "Sabrina Carpenter",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 0
+  },
+  {
+    "id_album": 82,
+    "id_albumSpotify": "77FA79G5eD8OomxqRvBftL",
+    "AlbumTitulo": "Pianeta de Miller",
+    "temporada": 10,
+    "id_user_indicado_por": 16,
+    "AlbumArtistas": "Mr. Rain",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 0
+  },
+  {
+    "id_album": 83,
+    "id_albumSpotify": "19bQiwEKhXUBJWY6oV3KZk",
+    "AlbumTitulo": "Madvillainy",
+    "temporada": 10,
+    "id_user_indicado_por": 4,
+    "AlbumArtistas": "MF DOOM",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 0
+  },
+  {
+    "id_album": 84,
+    "id_albumSpotify": "0T6NLOJMmjD6xyvzNswmnn",
+    "AlbumTitulo": "Hasos",
+    "temporada": 10,
+    "id_user_indicado_por": 7,
+    "AlbumArtistas": "Baco Exu do Blues",
+    "data_inicio_avaliacao": "2026-01-11 00:00:00",
+    "data_fim_avaliacao": "2026-01-17 00:00:00",
+    "avaliado": 1
+  },
+  {
+    "id_album": 85,
+    "id_albumSpotify": "4a6NzYL1YHRUgx9e3YZI6I",
+    "AlbumTitulo": "The Life of a Showgirl",
+    "temporada": 10,
+    "id_user_indicado_por": 12,
+    "AlbumArtistas": "Taylor Swift",
+    "data_inicio_avaliacao": "2026-02-01 00:00:00",
+    "data_fim_avaliacao": "2026-02-07 00:00:00",
+    "avaliado": 1
+  },
+  {
+    "id_album": 86,
+    "id_albumSpotify": "4HcPzKyKVtcZCwJgesoZWn",
+    "AlbumTitulo": "Nada Como Um Dia Após o Outro Vol. 1 e 2",
+    "temporada": 10,
+    "id_user_indicado_por": 17,
+    "AlbumArtistas": "Racionais MC's",
+    "data_inicio_avaliacao": "2026-01-18 00:00:00",
+    "data_fim_avaliacao": "2026-01-24 00:00:00",
+    "avaliado": 1
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 88,
+    "id_albumSpotify": "6q1ZuWCnYTQb7KhXHZo947",
+    "AlbumTitulo": "Everything You've Come to Expect",
+    "temporada": 10,
+    "id_user_indicado_por": 5,
+    "AlbumArtistas": "The Last Shadow Puppets",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 0
+  },
+  {
+    "id_album": 89,
+    "id_albumSpotify": "0cdntdbjR5jgoKaIHSXJuK",
+    "AlbumTitulo": "CARRANCA",
+    "temporada": 10,
+    "id_user_indicado_por": 18,
+    "AlbumArtistas": "Urias",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 0
+  },
+  {
+    "id_album": null
+  },
+  {
+    "id_album": 91,
+    "id_albumSpotify": "4R6FV9NSzhPihHR0h4pI93",
+    "AlbumTitulo": "From Zero",
+    "temporada": 10,
+    "id_user_indicado_por": 11,
+    "AlbumArtistas": "Linkin Park",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 0
+  },
+  {
+    "id_album": 92,
+    "id_albumSpotify": "5rcMJNWebtl2r2S18Je1A0",
+    "AlbumTitulo": "Tábua das Esmeraldas",
+    "temporada": 10,
+    "id_user_indicado_por": 19,
+    "AlbumArtistas": "Jorge Ben",
+    "data_inicio_avaliacao": null,
+    "data_fim_avaliacao": null,
+    "avaliado": 0
+  }
+]
